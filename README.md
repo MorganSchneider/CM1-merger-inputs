@@ -1,4 +1,4 @@
-Six total simulations were run for this work:
+Six total simulations were run for this work:\n
 -MERGER full simulation, 5 h integration, model output every 15 min
 -QLCS full simulation, 5 h integration, model output every 15 min
 -SUPERCELL full simulation, 5 h integration, model output every 15 min
