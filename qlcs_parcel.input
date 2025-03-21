@@ -1,0 +1,12 @@
+ &prclparms
+ prcltime1 =   10800.0, ! parcel initialization time (s)
+ prclxmin  =  -50000.0, ! western edge of parcel init box (m)
+ prclymin  = -150000.0, ! southern edge of parcel init box (m)
+ prclzmin  =      10.0, ! lowest level of parcel init box (m)
+ prcldx    = 200.0,     ! parcel spacing in x (m)
+ prcldy    = 200.0,     ! parcel spacing in y (m)
+ prcldz    =  50.0,     ! parcel spacing in z (m)
+ prclnx    = 250,       ! integer number of parcel levels in x
+ prclny    = 500,       ! integer number of parcel levels in y
+ prclnz    =  40        ! integer number of parcel levels in z
+ /

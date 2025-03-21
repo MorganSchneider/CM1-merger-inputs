@@ -1,0 +1,35 @@
+
+### High-resolution supercell control: parcel edition ###
+Final supercell simulation restart for more frequent output and parcel trajectories.
+Restart from 180 min (rstnum = 6) and run for 1 h
+
+Model output every 1 min, parcel output every 15 s, restarts every 15 min
+--------------------
+Sounding: PERiLS IOP2 195946 UTC (stable wind profile from dry run)
+CAPE: 383 J/kg | 0-6 km mean wind: u=2.6 m/s, v=24.1 m/s | ztop: 15080 m
+
+PARCEL CONFIGURATION:
+-nparcels = 1600000
+-Initialized in a 40 x 40 x 2 km box --> xmin=-35000, ymin=-130000, zmin=10
+-Parcel spacing: dx,dy=200 m, dz=50 m
+-Parcel levels: nx,ny=200, nz=40
+
+MAIN CONFIGURATION:
+-Total model integration time 18000 s (5 h)
+-Restart integration time 3600 s (1 h)
+-Domain size 360 km by 360 km by 15.080 km
+-dx = dy = 125 m, dz = stretched from 20 m in the lowest 300 m to 280 m above 12 km
+-nx = ny = 2880, nz = 104
+-Using 24 nodes --> nodex = 24, nodey = 36
+-umove = 6.0 m/s, vmove = 0
+-NSSL double moment microphysics (ptype=27), TKE turbulence (sgsmodel=1), Coriolis included (icor=1, lspgrad=1)
+-Periodic nbc/sbc, open radiative ebc/wbc, semi-slip bbc
+-Random theta perturbations 0.25 K
+-Diagnosed brightband reflectivity option turned OFF (set iusewetsnow = 0 in module_mp_nssl_2mom.F) (thanks, Ted!)
+
+SUPERCELL INITIATION:
+-Warm tendency nudging (Flournoy 2023) with max amplitude = 0.021 K/s
+  -Centered at -40000, 50000, 3500 m | radius = 5000 m, depth = 1500 m
+  -Rampup/rampdown: 0, 1800, 1801, 3600 s
+
+
